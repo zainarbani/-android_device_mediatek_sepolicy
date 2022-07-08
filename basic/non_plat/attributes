@@ -17,6 +17,11 @@ attribute hal_pq;
 attribute hal_pq_client;
 attribute hal_pq_server;
 
+# MMAGENT HIDL
+attribute hal_mtk_mmagent;
+attribute hal_mtk_mmagent_client;
+attribute hal_mtk_mmagent_server;
+
 # KEY ATTESTATION HIDL
 attribute mtk_hal_keyattestation;
 attribute mtk_hal_keyattestation_client;

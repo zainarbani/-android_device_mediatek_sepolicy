@@ -20,6 +20,9 @@ type nvram_agent_binder_hwservice, hwservice_manager_type;
 # PQ HIDL
 type mtk_hal_pq_hwservice, hwservice_manager_type;
 
+# MMAGENT HIDL
+type mtk_hal_mmagent_hwservice, hwservice_manager_type;
+
 # keymaster attestation hidl
 type mtk_hal_keyattestation_hwservice, hwservice_manager_type;
 

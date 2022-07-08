@@ -582,6 +582,8 @@
 
 # PQ hal
 /(system\/vendor|vendor)/bin/hw/vendor\.mediatek\.hardware\.pq@2\.2-service u:object_r:mtk_hal_pq_exec:s0
+# MMAGENT hal
+/(vendor\/system/vendor)/bin/hw/vendor\.mediatek\.hardware\.mmagent@1\.1-service u:object_r:mtk_hal_mmagent_exec:s0
 # MMS hal
 /(system\/vendor|vendor)/bin/hw/vendor\.mediatek\.hardware\.mms@1\.1-service            u:object_r:mtk_hal_mms_exec:s0
 /(system\/vendor|vendor)/bin/hw/vendor\.mediatek\.hardware\.mms@1\.3-service		u:object_r:mtk_hal_mms_exec:s0
@@ -646,6 +648,7 @@
 
 /vendor/lib(64)?/hw/android\.hardware\.graphics\.mapper@2\.0-impl-2\.1\.so u:object_r:same_process_hal_file:s0
 
+/vendor/lib(64)?/vendor\.mediatek\.hardware\.mmagent@[0-9]\.[0-9]\.so                 u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/vendor\.mediatek\.hardware\.mms@[0-9]\.[0-9]\.so                 u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libdpframework\.so                                  u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libpq_cust_base\.so                                 u:object_r:same_process_hal_file:s0

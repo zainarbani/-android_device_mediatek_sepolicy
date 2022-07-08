@@ -1,0 +1,21 @@
+type mtk_hal_mmagent, domain;
+type mtk_hal_mmagent_exec, exec_type, file_type, vendor_file_type;
+
+# Setup for domain transition
+init_daemon_domain(mtk_hal_mmagent)
+
+# Allow to use HWBinder IPC
+hwbinder_use(mtk_hal_mmagent);
+
+# Allow a set of permissions required for a domain to be a server which provides a HAL implementation over HWBinder.
+hal_server_domain(mtk_hal_mmagent, hal_mtk_mmagent)
+
+# add/find permission rule to hwservicemanager
+add_hwservice(hal_mtk_mmagent_server, mtk_hal_mmagent_hwservice)
+
+# Allow to allocate hidl memory
+hal_client_domain(mtk_hal_mmagent, hal_allocator)
+
+# Purpose : Allow to use kernel driver
+allow mtk_hal_mmagent ion_device:chr_file { read write open ioctl };
+allow mtk_hal_mmagent apusys_device:chr_file { read write open ioctl };
