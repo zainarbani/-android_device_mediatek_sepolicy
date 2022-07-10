@@ -335,6 +335,8 @@
 /dev/uio0(/.*)? u:object_r:uio0_device:s0
 /dev/usrdata(/.*)? u:object_r:usrdata_device:s0
 /dev/Vcodec(/.*)? u:object_r:Vcodec_device:s0
+/dev/vdec-fmt(/.*)? u:object_r:mtk_fmt_device:s0
+/dev/fmt_sync(/.*)? u:object_r:mtk_fmt_sync_device:s0
 /dev/vmodem u:object_r:vmodem_device:s0
 /dev/vow(/.*)? u:object_r:vow_device:s0
 /dev/wmtdetect(/.*)? u:object_r:wmtdetect_device:s0
@@ -596,6 +598,9 @@
 /(system\/vendor|vendor)/bin/hw/android\.hardware\.nfc@1\.1-service\.st u:object_r:hal_nfc_default_exec:s0
 /(system\/vendor|vendor)/bin/hw/android\.hardware\.nfc@1\.2-service\.st u:object_r:hal_nfc_default_exec:s0
 /(system\/vendor|vendor)/bin/hw/android\.hardware\.secure_element@1\.0-service\.st54spi u:object_r:st54spi_hal_secure_element_exec:s0
+# MTK Codec2 Hal
+/(system\/vendor|vendor)/bin/hw/android\.hardware\.media\.c2@1\.2-mediatek                   u:object_r:mtk_hal_c2_exec:s0
+/(system\/vendor|vendor)/bin/hw/android\.hardware\.media\.c2@1\.2-mediatek-64b               u:object_r:mtk_hal_c2_exec:s0
 # MTK Wifi Hal
 /(system\/vendor|vendor)/bin/hw/android\.hardware\.wifi@1\.0-service-mediatek           u:object_r:mtk_hal_wifi_exec:s0
 /(system\/vendor|vendor)/bin/hw/android\.hardware\.wifi@1\.0-service-lazy-mediatek      u:object_r:mtk_hal_wifi_exec:s0

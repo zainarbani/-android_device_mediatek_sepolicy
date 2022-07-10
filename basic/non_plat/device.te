@@ -37,6 +37,8 @@ type MAIN2AF_device, dev_type;
 type SUBAF_device, dev_type;
 type M4U_device_device, dev_type;
 type Vcodec_device, dev_type;
+type mtk_fmt_device, dev_type;
+type mtk_fmt_sync_device, dev_type;
 type MJC_device, dev_type;
 type smartpa_device, dev_type;
 type smartpa1_device, dev_type;
