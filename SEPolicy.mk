@@ -1,5 +1,5 @@
 # Board specific SELinux policy variable definitions
-MTK_SEPOLICY_PATH:= device/mediatek/sepolicy_vndr
+MTK_SEPOLICY_PATH:= device/mediatek/sepolicy
 
 # Build with broken namespaces
 # Userspace blobs are still dependent older props that
